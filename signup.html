@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="dep.js"></script>
+    <script type="text/javascript" src="api_requests.js"></script>
+
+
+    <title>Sign up</title>
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css"
+    />
+
+
+    <link rel="icon"
+          type="image/svg"
+          href="images/flags/ru.svg">
+
+</head>
+
+
+<body>
+
+<h1 align="center">
+    Support Unilang on Patreon to access extra features
+</h1>
+
+<div id="container1" align="center">
+
+    <p style="font-size: 16px"><a href="https://www.patreon.com/unilang" target="_blank">Become a supporter</a> and after that</p>
+    <input type="text" placeholder="Put your Patreon email here (it will serve as your Unilang login)"
+           id="login_name2" style="width:500px">
+    <br>
+    <input type="text" placeholder="Put here your personal key you found in the welcoming email" id="login_key2"
+           style="width: 500px">
+    <br>
+            <p id="login_pass2"></p>
+
+            <!--
+            <img src="images//question.svg"
+                 title="We generate your password for extra security. This way, even if the hacker steals it, it will guaranteed to look nothing alike your other passwords"
+                 style="width:10px;height:10px;">
+                -->
+
+    <br>
+    <button class="smallbutton" onclick="try_register2()" style="width: 300px">Sign up</button>
+</div>
+
+<br>
+<br>
+
+
+<table align="center" class="searchtable">
+
+    <tr>
+
+        <td>
+            <div align="center">
+                <b>Silver</b>
+                <br>
+                $5 per month
+                <br>
+            </div>
+        </td>
+
+
+        <td>
+            <div align="center">
+                <b>Gold</b>
+                <br>
+                $20 per month
+                <br>
+            </div>
+        </td>
+
+        <!--
+        <td>
+            <div align="center">
+                <b>Gold</b>
+                <br>
+                $100 per month
+                <br>
+            </div>
+        </td>
+        -->
+    </tr>
+
+
+    <tr>
+        <td>
+            <ul>
+                <li>Increased vocabulary size
+                </li>
+            </ul>
+        </td>
+
+        <td>
+            <ul>
+                <li>Increased vocabulary size</li>
+                <li>Translation feature <img src="images//translate.svg" title="Align"
+                                                    style="width:30px;height:30px;"> compare the text with its
+                    human/machine translation
+                    <br>
+                </li>
+            </ul>
+        </td>
+
+        <!--
+        <td>
+            <ul>
+                <li>Increased vocabulary size</li>
+                <li>Translation feature <img src="images//translate.svg" title="Align"
+                                             style="width:30px;height:30px;"></li>
+                <li>Alignment feature <img src="images//literary.svg" title="Align"
+                                           style="width:30px;height:30px;"></li>
+                <li><b>5 hours</b> of 1-on-1 <b>speaking practice</b> with a native speaker</li>
+            </ul>
+        </td>
+        -->
+    </tr>
+
+
+</table>
+
+
+<script>
+    /*
+    if(main_lang == 7){
+        document.getElementById("after_image").src = "images//before_dutch.png"
+        document.getElementById("before_image").src = "images//after_dutch.png"
+        document.getElementById("translate_image").src = "images//translate_dutch.png"
+        document.getElementById("align_image").src = "images//align_dutch.png"
+        document.getElementById("align_image").width = 400
+        document.getElementById("translate_image").width = 800
+        document.getElementById("after_image").width = 400
+        document.getElementById("before_image").width = 400
+
+    }
+    */
+
+    function get_pass() {
+        var randomstring = Math.random().toString(36).slice(-8)//+""+Math.random().toString(36).slice(-8);
+        return randomstring;
+    }
+
+    generated_pass = get_pass()
+    document.getElementById("login_pass2").innerHTML = "Your password will be: " + generated_pass
+    accept_lang()
+</script>
+
+
+
+<style>
+    .footer {
+        position: fixed;
+        left: 60%;
+        bottom: 0;
+        width: 40%;
+        color: white;
+        text-align: left;
+    }
+</style>
+
+<div class="footer">
+    <p style="font-size: 10px">The articles content is based on <a href="https://en.wiktionary.org" target="_blank">Wiktionary</a> entities and is distributed under GFDL license</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css"/>
+
+
+    <link rel="icon"
+          type="image/svg"
+          href="images/flags/ru.svg">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=OpenSans">
+
+    <script type="text/javascript" src="textToSpeech.js"></script>
+    <script type="text/javascript" src="dep.js"></script>
+    <script type="text/javascript" src="api_requests.js"></script>
+    <script type="text/javascript" src="words_handler.js"></script>
+    <script type="text/javascript" src="jokes.js"></script>
+
+
+    <title>Vocabulary test</title>
+
+</head>
+<body>
+
+<section>
+    <nav>
+        <label for="levels" style="font-size: 24px; color: white">Difficulty:   </label>
+        <select name="Levels" id="levels" class="mydropbox" style="color: white" onchange="do_on_change()">
+            <option value="rnd">Random</option>
+            <option value="l1">A0</option>
+            <option value="l2">A1</option>
+            <option value="l3">A2</option>
+            <option value="l4">B1</option>
+            <option value="l5">B2</option>
+        </select>
+
+        <p id="info" style="font-size:20px"></p>
+
+        <div align="center">
+            <input type="button" id="b0" onclick="answer(0)" value="" class="mybutton">
+            <br>
+
+            <input type="button" id="b1" onclick="answer(1)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b2" onclick="answer(2)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b3" onclick="answer(3)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b4" onclick="answer(4)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b5" onclick="answer(5)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b6" onclick="answer(6)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b7" onclick="answer(7)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b8" onclick="answer(8)" value="" class="mybutton">
+            <br>
+            <input type="button" id="b9" onclick="answer(9)" value="" class="mybutton">
+            <br>
+
+
+            <p id="expl">
+            </p>
+
+
+            <input type="button" id="next" onclick="nextQuestion()" value="Next" class="mybutton">
+        </div>
+    </nav>
+
+    <article>
+
+
+        <table>
+            <td width="30%" id="prono_part" style="color: white" >
+
+            </td>
+
+            <td width="30%" id="ety_part"  style="color: white" >
+
+            </td>
+
+
+        </table>
+
+        <p id="content" style="font-size: 16px"></p>
+
+    </article>
+</section>
+
+
+<script>
+    let test_vocab = []
+
+    let nmax = 2000
+    let curnum = 1
+    let mode = false
+    let buttons = []
+    let diff = 1
+    let max_words = 1000000
+
+    //document.getElementById("all").style.visibility = 'hidden';
+    const __queryString = window.location.search;
+    const urlParams4 = new URLSearchParams(__queryString);
+
+    let mww = urlParams4.get('n')
+
+    accept_lang()
+
+    if (mww != null) {
+        max_words = mww
+    }
+
+    console.log("MW", max_words)
+
+    function init() {
+        cont = document.getElementById("content")
+        ety = document.getElementById("ety_part")
+        prono = document.getElementById("ptono_part")
+
+
+        buttons.push(document.getElementById("b0"));
+        buttons.push(document.getElementById("b1"));
+        buttons.push(document.getElementById("b2"));
+        buttons.push(document.getElementById("b3"));
+        buttons.push(document.getElementById("b4"));
+        buttons.push(document.getElementById("b5"));
+        buttons.push(document.getElementById("b6"));
+        buttons.push(document.getElementById("b7"));
+        buttons.push(document.getElementById("b8"));
+        buttons.push(document.getElementById("b9"));
+    }
+
+
+    function answer(index) {
+        if (!mode) {
+            curnum++;
+            mode = true
+            document.getElementById("next").style.width = "200px"
+            document.getElementById("next").style.visibility = "visible";
+
+            console.log("LN", curquest[2], index)
+            if (curquest[3]==index) {
+                document.getElementById("expl").innerHTML = "<br><br>Correct!"
+                goodAnswers++;
+            } else {
+                document.getElementById("expl").innerHTML = "<br><br>Wrong, the correct answer is " + handleText(curquest[2], fff)
+            }
+        } else {
+            hndwrd(buttons[index].value.replaceAll("́", ""))
+        }
+    }
+
+    function fff(v){
+        document.getElementById("expl").innerHTML = "<br><br>Wrong, the correct answer is " + v
+    }
+
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max-min)) + min;
+    }
+
+    function getQuestion(index) {
+        //size = max_words/nmax
+
+        v = document.getElementById('levels').value
+
+
+        if(v == "rnd"){
+            fr = getRandomInt(100, 50000);
+        }
+
+        if(v == "l1"){
+            fr = getRandomInt(100, 1000);
+        }
+
+        if(v == "l2"){
+            fr = getRandomInt(1000, 3000);
+        }
+
+        if(v == "l3"){
+            fr = getRandomInt(3000, 6000);
+        }
+
+        if(v == "l4"){
+            fr = getRandomInt(6000, 15000);
+        }
+
+        if(v == "l5"){
+            fr = getRandomInt(15000, 30000);
+        }
+
+
+        apires = ___api_get_vocabtest(fr)
+
+
+        res = apires.split("^")
+        
+        res[1] = res[1].split(",")
+        res.push(res[2])
+        res[2] = res[1][parseInt(res[2])]
+
+        return res
+    }
+
+    function showResults() {
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].style.visibility = "hidden"
+        }
+
+        document.getElementById("next").style.visibility = "hidden"
+        document.getElementById("expl").innerHTML = "<br>"
+        document.getElementById("info").innerHTML = "Congratulations! You answered " + goodAnswers + "/" + nmax + " questions correctly";
+        document.getElementById("content").innerHTML = "";
+    }
+
+    let curquest = null
+    let goodAnswers = 0
+
+    function nextQuestion() {
+        document.getElementById("content").innerHTML = "";
+        document.getElementById("ety_part").innerHTML = "";
+        document.getElementById("prono_part").innerHTML = "";
+
+        if (curnum >= nmax + 1) {
+            showResults()
+            mode = true
+        } else {
+            document.getElementById("expl").innerHTML = "<br>"
+            mode = false
+            let is = "<h1> Question " + curnum +  "/"+nmax+"</h1>";
+
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].style.width = "300px"
+                buttons[i].style.height = "35px"
+            }
+
+            curquest = getQuestion(curnum)
+            is += curquest[1]
+
+            document.getElementById("info").innerHTML = curquest[0];
+
+            for (let q = 0; q < buttons.length; q++) {
+                let t = curquest[1][q]
+                __after = t.substring(t.indexOf(">")+1)
+                t = __after.substring(0, __after.indexOf("<"))
+                buttons[q].value = t
+            }
+
+            document.getElementById("next").style.visibility = "hidden";
+        }
+
+    }
+
+
+    init_native_lang()
+
+
+    init()
+
+    function do_on_change(){
+        nextQuestion()
+    }
+
+    nextQuestion()
+
+
+</script>
+
+
+</body>
+</html>

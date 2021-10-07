@@ -1,0 +1,1029 @@
+Serving at 8081
+Accepted request ['GET', '/api/sound/obtain', 'index=01048a97196a8f6fb99df9d208469c6d&lang=ru', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:21:36] "GET /api/sound/obtain?index=01048a97196a8f6fb99df9d208469c6d&lang=ru HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'index=e59d4f25a5c776c05e0475d1be803a2d&lang=ru', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:21:50] "GET /api/sound/obtain?index=e59d4f25a5c776c05e0475d1be803a2d&lang=ru HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:22:49] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11371)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'index=327212e942ddc5c0f62ef96c3dd19b5b&lang=nl', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:23:08] "GET /api/sound/obtain?index=327212e942ddc5c0f62ef96c3dd19b5b&lang=nl HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:24:49] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11447)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:26:50] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11514)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'index=854d44098b21264774df389b709c4aeb&lang=nl', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:28:00] "GET /api/sound/obtain?index=854d44098b21264774df389b709c4aeb&lang=nl HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:28:51] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11604)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:30:52] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11649)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:32:52] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11711)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:34:53] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11801)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'index=cbc18d4a3671e93269bd0ad3f1eb22b4&lang=ru', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:36:41] "GET /api/sound/obtain?index=cbc18d4a3671e93269bd0ad3f1eb22b4&lang=ru HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:36:54] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11874)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:38:55] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 11969)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Ignored request ['GET', '/manager/html', 'HTTP/1.1']
+209.141.48.244 - - [15/Apr/2021 11:40:23] "GET /manager/html HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:40:55] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 12155)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:42:56] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 12226)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:44:57] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 14613)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:46:58] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4172)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:48:59] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4276)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:50:59] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4356)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:53:00] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4423)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:55:01] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4485)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:57:02] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4551)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 11:59:03] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4697)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:01:04] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4758)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'index=e941584e27569ea6f56695a59202e1d0&lang=ru', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:02:27] "GET /api/sound/obtain?index=e941584e27569ea6f56695a59202e1d0&lang=ru HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:03:05] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4840)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:05:05] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4903)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:07:06] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 4996)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:09:07] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5106)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:11:08] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5173)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:13:09] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5240)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:15:09] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5305)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:17:10] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5375)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:19:11] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5458)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:21:12] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5525)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:23:12] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5594)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:25:13] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5671)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:27:14] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5748)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:29:15] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 5861)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:31:16] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6001)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:33:16] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6128)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:35:17] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6249)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:37:18] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6361)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:39:19] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6440)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'index=7bc06876ac611b7ac84d47fbbe33a99a&lang=nl', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:41:07] "GET /api/sound/obtain?index=7bc06876ac611b7ac84d47fbbe33a99a&lang=nl HTTP/1.1" 200 -
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:41:20] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6545)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:43:20] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6614)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:45:21] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6676)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:47:22] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6751)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------
+Accepted request ['GET', '/api/sound/obtain', 'lang=ru&index=common_voice_ru_18868902.mp3', 'HTTP/1.1']
+91.210.84.245 - - [15/Apr/2021 12:49:23] "GET /api/sound/obtain?lang=ru&index=common_voice_ru_18868902.mp3 HTTP/1.1" 200 -
+----------------------------------------
+Exception happened during processing of request from ('91.210.84.245', 6844)
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.8/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.8/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/usr/lib/python3.8/http/server.py", line 427, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.8/http/server.py", line 415, in handle_one_request
+    method()
+  File "/root/unilang_server/PageHandler2.py", line 52, in do_GET
+    self.generic_handler()
+  File "/root/unilang_server/PageHandler2.py", line 39, in generic_handler
+    sounds.pull_sound(self, args)
+  File "/root/unilang_server/sounds.py", line 114, in pull_sound
+    fo = open("data//speaking//audio//" + args["lang"] + "//" + args["index"]+".mp3", "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'data//speaking//audio//ru//common_voice_ru_18868902.mp3.mp3'
+----------------------------------------

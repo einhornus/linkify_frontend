@@ -1,0 +1,74 @@
+<head>
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css"/>
+
+
+    <link rel="icon"
+          type="image/svg"
+          href="images/flags/ru.svg">
+
+
+    <meta charset="UTF-8">
+    <title>Unilang Russian</title>
+</head>
+<body>
+
+
+<script>
+    ___debug = false
+
+    function ___api_get_root(port){
+        if(___debug){
+            return "http://localhost:"+port
+        }
+        else {
+            return "http://174.138.15.163:"+port
+            //return "http://link-ify:"+port+"/api/"
+        }
+    }
+
+    /*
+    function ___api( callback){
+
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("POST", ___api_get_root(5000), true);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var res = rawFile.responseText;
+                    callback(res)
+                }
+            }
+        }
+        rawFile.send(JSON.stringify({
+            q: "Hello!",
+            source: "en",
+            target: "ru"
+        }));
+    }
+
+
+    ___api(function (txt){
+        console.log("res", txt)
+    })
+    */
+
+    const res = await fetch(___api_get_root(5000), {
+        method: "POST",
+        body: JSON.stringify({
+            q: "Hello!",
+            source: "en",
+            target: "ru"
+        }),
+        headers: { "Content-Type": "application/json" }
+    });
+
+    console.log(await res.json());
+</script>
+
+</body>

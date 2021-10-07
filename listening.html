@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css"/>
+
+
+    <link rel="icon"
+          type="image/svg"
+          href="images/flags/ru.svg">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=OpenSans">
+
+    <script type="text/javascript" src="textToSpeech.js"></script>
+    <script type="text/javascript" src="dep.js"></script>
+    <script type="text/javascript" src="words_handler.js"></script>
+    <script type="text/javascript" src="api_requests.js"></script>
+    <script type="text/javascript" src="jokes.js"></script>
+
+
+    <title>Listening test</title>
+
+</head>
+<body>
+
+<section>
+    <nav>
+        <label for="levels" style="font-size: 24px; color: white">Difficulty:   </label>
+        <select name="Levels" id="levels" class="mydropbox" style="color: white" onchange="do_on_change()">
+            <option value="rnd">Random</option>
+            <option value="l1">Beginner</option>
+            <option value="l2">A0</option>
+            <option value="l3">A1</option>
+            <option value="l4">A2</option>
+            <option value="l5">B1</option>
+        </select>
+
+
+        <div>
+
+            <textarea type="text" id="your_input" cols=30 rows="5" placeholder="Type what you hear" hidden="true"></textarea>
+
+            <br>
+            <br>
+
+            <p id="audios">
+            </p>
+
+            <br>
+            <br>
+
+            <button class="mybutton" style="width: 300px; color: white" onclick="commit()" id="commit_button">Show answer</button>
+            <br>
+            <br>
+
+
+            <p id="explanation" style="width: 300px; font-size: 24px" >
+            </p>
+
+        </div>
+    </nav>
+
+    <article>
+
+
+        <table>
+            <td width="30%" id="prono_part" style="color: white">
+
+            </td>
+
+            <td width="30%" id="ety_part" style="color: white">
+
+            </td>
+
+
+        </table>
+
+        <p id="content" style="font-size: 16px"></p>
+
+    </article>
+</section>
+
+
+<script>
+    accept_lang()
+    cont = document.getElementById("content")
+    ety = document.getElementById("ety_part")
+    prono = document.getElementById("prono_part")
+
+
+    //searchmean("language", false)
+
+
+    //audio.play()
+    //console.log("Audio", audio)
+    //document.getElementById("sh").src = "http://localhost:8080/api/sound/get?index=1&lang=nl"
+
+
+    let correct_answer = "";
+    let correct_tranlation = "";
+
+    function ontextappeared(samples) {
+        console.log("I see", samples)
+        let spl = samples.split("@");
+        correct_answer = spl[0]
+        correct_tranlation = spl[1]
+        //correct_answer = spl[0].substr(0, spl[0].indexOf("|"))
+
+        document.getElementById("audios").innerHTML = "";
+
+        let tranlation = ""
+        let html = "";
+        for (let q = 1; q < spl.length; q++) {
+            vvvs = spl[q].split("^")
+            correct_tranlation = vvvs[1]
+
+            html += "<audio controls>";
+            let cl = ___api_get_root(8081) + "sound/obtain?index=" + vvvs[0] + "&lang=" + std_langs[main_lang]
+            html += "<source src=\"" + cl + "\" type=\"audio/mp3\">";
+            html += "</audio>"
+        }
+
+        document.getElementById("audios").innerHTML = html;
+    }
+
+    function playaudio(audio, bloburl) {
+        console.log("Blob url", bloburl)
+        //audio.play()
+    }
+
+    let commited = false
+
+    function commit() {
+        if(!commited) {
+            let explanation = ""
+            inp = document.getElementById("your_input").value
+
+            handleText(correct_answer, function (fff1) {
+                explanation += "<h4>Correct answer</h4>" + fff1 + "<hr>";
+                explanation += correct_tranlation + "<hr>";
+
+                /*
+            handleText(inp, function (fff2){
+                explanation += "<h4>Your answer</h4>" + fff2
+            })
+             */
+
+                document.getElementById("explanation").innerHTML = explanation;
+            })
+
+            document.getElementById("commit_button").innerText = "Next phrase";
+            commited = true;
+        }
+        else{
+            do_next()
+            commited = false;
+        }
+    }
+
+    function do_next() {
+        v = document.getElementById('levels').value
+        if(v == "rnd"){
+            level = -1;
+        }
+
+        if(v == "l1"){
+            level = 1;
+        }
+
+        if(v == "l2"){
+            level = 2;
+        }
+
+        if(v == "l3"){
+            level = 3;
+        }
+
+        if(v == "l4"){
+            level = 4;
+        }
+
+        if(v == "l5"){
+            level = 5;
+        }
+
+
+        document.getElementById("your_input").value = ""
+        //document.getElementById("nextdiv").hidden = true;
+        ___api_get_listen(level, ontextappeared);
+        document.getElementById("explanation").innerHTML = "";
+
+        commited = false;
+        document.getElementById("commit_button").innerText = "Show answer";
+    }
+
+    init_native_lang()
+
+    let level = -1
+    const __queryString = window.location.search;
+    const urlParams2 = new URLSearchParams(__queryString);
+
+    if(main_lang == 4){
+        document.getElementById("content").style.fontFamily = "Verdana"
+    }
+
+    function do_on_change(){
+        do_next()
+    }
+
+    do_next();
+
+</script>
+
+
+</body>
+</html>

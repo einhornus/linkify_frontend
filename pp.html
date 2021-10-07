@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Text to Speech</title>
+
+
+    <script src="./p5.js"></script>
+    <script src="./p5.speech.js"></script>
+
+</head>
+<body class="container mt-5 bg-dark">
+<p id="text" style="color: #FFA500"></p>
+
+</body>
+<script>
+    longest = ""
+
+    let speech = new p5.SpeechRec('ru', gotSpeech)
+    speech.start(true, false)
+    document.getElementById("text").innerHTML = ""
+
+    speech.onEnd = function (){
+        console.log("Ended")
+    }
+
+    speech.onResult = function (){
+        rs = speech.resultString
+
+
+
+        document.getElementById("text").innerHTML += rs+"<br>"
+        console.log(JSON.stringify(speech))
+        console.log(speech)
+        console.log("Result")
+    }
+
+    largest = ""
+
+    function gotSpeech(){
+
+    }
+</script>
+</html>

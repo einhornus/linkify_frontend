@@ -1,0 +1,636 @@
+Fantasy;Harry Potter and the Philosopher's Stone;harry1;mt;5
+Humor;Reddit jokes 1;reddit//reddit_jokes_0;mt;4
+Humor;Reddit jokes 2;reddit//reddit_jokes_1;mt;4
+Humor;Reddit jokes 3;reddit//reddit_jokes_2;mt;5
+Humor;Reddit jokes 4;reddit//reddit_jokes_3;mt;5
+Humor;Reddit jokes 5;reddit//reddit_jokes_4;mt;5
+Humor;Reddit jokes 6;reddit//reddit_jokes_5;mt;5
+Humor;Reddit jokes 7;reddit//reddit_jokes_6;mt;6
+Humor;Reddit jokes 8;reddit//reddit_jokes_7;mt;6
+Humor;Reddit jokes 9;reddit//reddit_jokes_8;mt;6
+
+Fairy tales;Hansel and Gretel;fairy//fr//hansel_and_gretel//hansel_and_gretel;fr;3
+Fairy tales;Hansel and Gretel;fairy//nl//hansel_and_gretel//hansel_and_gretel;nl;3
+Fairy tales;Hansel and Gretel;fairy//es//hansel_and_gretel//hansel_and_gretel;es;3
+Fairy tales;Hansel and Gretel;fairy//de//hansel_and_gretel//hansel_and_gretel;de;3
+Fairy tales;Hansel and Gretel;fairy//it//hansel_and_gretel//hansel_and_gretel;it;3
+Fairy tales;Hansel and Gretel;fairy//ru//hansel_and_gretel//hansel_and_gretel;ru;3
+Fairy tales;Hansel and Gretel;fairy//pt//hansel_and_gretel//hansel_and_gretel;pt;3
+Fairy tales;Hansel and Gretel;fairy//fr//hansel_and_gretel//hansel_and_gretel;fr;3
+
+
+Fairy tales;The Bremen town musicians;fairy//fr//the_bremen_town_musicians//the_bremen_town_musicians;fr;3
+Fairy tales;The Bremen town musicians;fairy//nl//the_bremen_town_musicians//the_bremen_town_musicians;nl;3
+Fairy tales;The Bremen town musicians;fairy//es//the_bremen_town_musicians//the_bremen_town_musicians;es;3
+Fairy tales;The Bremen town musicians;fairy//de//the_bremen_town_musicians//the_bremen_town_musicians;de;3
+Fairy tales;The Bremen town musicians;fairy//it//the_bremen_town_musicians//the_bremen_town_musicians;it;3
+Fairy tales;The Bremen town musicians;fairy//ru//the_bremen_town_musicians//the_bremen_town_musicians;ru;3
+Fairy tales;The Bremen town musicians;fairy//pt//the_bremen_town_musicians//the_bremen_town_musicians;pt;3
+Fairy tales;The Bremen town musicians;fairy//fr//the_bremen_town_musicians//the_bremen_town_musicians;fr;3
+
+
+Fairy tales;Little Red Riding Hood;fairy//fr//little_red_cap//little_red_cap;fr;3
+Fairy tales;Little Red Riding Hood;fairy//nl//little_red_cap//little_red_cap;nl;3
+Fairy tales;Little Red Riding Hood;fairy//es//little_red_cap//little_red_cap;es;3
+Fairy tales;Little Red Riding Hood;fairy//de//little_red_cap//little_red_cap;de;3
+Fairy tales;Little Red Riding Hood;fairy//it//little_red_cap//little_red_cap;it;3
+Fairy tales;Little Red Riding Hood;fairy//ru//little_red_cap//little_red_cap;ru;3
+Fairy tales;Little Red Riding Hood;fairy//pt//little_red_cap//little_red_cap;pt;3
+Fairy tales;Little Red Riding Hood;fairy//fr//little_red_cap//little_red_cap;fr;3
+
+
+
+Bible;Genesis;bible//Genesis;sv;7
+Bible;Exodus;bible//Exodus;sv;7
+Bible;Leviticus;bible//Leviticus;sv;7
+Bible;Numbers;bible//Numbers;sv;7
+Bible;Deuteronomy;bible//Deuteronomy;sv;7
+Bible;Joshua;bible//Joshua;sv;7
+Bible;Judges;bible//Judges;sv;7
+Bible;Ruth;bible//Ruth;sv;7
+Bible;1 Samuel;bible//1 Samuel;sv;7
+Bible;2 Samuel;bible//2 Samuel;sv;7
+Bible;1 Kings;bible//1 Kings;sv;7
+Bible;2 Kings;bible//2 Kings;sv;7
+Bible;1 Chronicles;bible//1 Chronicles;sv;7
+Bible;2 Chronicles;bible//2 Chronicles;sv;7
+Bible;Ezra;bible//Ezra;sv;7
+Bible;Nehemiah;bible//Nehemiah;sv;7
+Bible;Esther;bible//Esther;sv;7
+Bible;Job;bible//Job;sv;7
+Bible;Psalms;bible//Psalms;sv;7
+Bible;Proverbs;bible//Proverbs;sv;7
+Bible;Ecclesiastes;bible//Ecclesiastes;sv;7
+Bible;Song of Solomon;bible//Song of Solomon;sv;7
+Bible;Isaiah;bible//Isaiah;sv;7
+Bible;Jeremiah;bible//Jeremiah;sv;7
+Bible;Lamentations;bible//Lamentations;sv;7
+Bible;Ezekiel;bible//Ezekiel;sv;7
+Bible;Daniel;bible//Daniel;sv;7
+Bible;Hosea;bible//Hosea;sv;7
+Bible;Joel;bible//Joel;sv;7
+Bible;Amos;bible//Amos;sv;7
+Bible;Obadiah;bible//Obadiah;sv;7
+Bible;Jonah;bible//Jonah;sv;7
+Bible;Micah;bible//Micah;sv;7
+Bible;Nahum;bible//Nahum;sv;7
+Bible;Habakkuk;bible//Habakkuk;sv;7
+Bible;Zephaniah;bible//Zephaniah;sv;7
+Bible;Haggai;bible//Haggai;sv;7
+Bible;Zechariah;bible//Zechariah;sv;7
+Bible;Malachi;bible//Malachi;sv;7
+Bible;Matthew;bible//Matthew;sv;7
+Bible;Mark;bible//Mark;sv;7
+Bible;Luke;bible//Luke;sv;7
+Bible;John;bible//John;sv;7
+Bible;Acts;bible//Acts;sv;7
+Bible;Romans;bible//Romans;sv;7
+Bible;1 Corinthians;bible//1 Corinthians;sv;7
+Bible;2 Corinthians;bible//2 Corinthians;sv;7
+Bible;Galatians;bible//Galatians;sv;7
+Bible;Ephesians;bible//Ephesians;sv;7
+Bible;Philippians;bible//Philippians;sv;7
+Bible;Colossians;bible//Colossians;sv;7
+Bible;1 Thessalonians;bible//1 Thessalonians;sv;7
+Bible;2 Thessalonians;bible//2 Thessalonians;sv;7
+Bible;1 Timothy;bible//1 Timothy;sv;7
+Bible;2 Timothy;bible//2 Timothy;sv;7
+Bible;Titus;bible//Titus;sv;7
+Bible;Philemon;bible//Philemon;sv;7
+Bible;Hebrews;bible//Hebrews;sv;7
+Bible;James;bible//James;sv;7
+Bible;1 Peter;bible//1 Peter;sv;7
+Bible;2 Peter;bible//2 Peter;sv;7
+Bible;1 John;bible//1 John;sv;7
+Bible;2 John;bible//2 John;sv;7
+Bible;3 John;bible//3 John;sv;7
+Bible;Jude;bible//Jude;sv;7
+Bible;Revelation;bible//Revelation;sv;7
+Bible;Genesis;bible//Genesis;nl;7
+Bible;Exodus;bible//Exodus;nl;7
+Bible;Leviticus;bible//Leviticus;nl;7
+Bible;Numbers;bible//Numbers;nl;7
+Bible;Deuteronomy;bible//Deuteronomy;nl;7
+Bible;Joshua;bible//Joshua;nl;7
+Bible;Judges;bible//Judges;nl;7
+Bible;Ruth;bible//Ruth;nl;7
+Bible;1 Samuel;bible//1 Samuel;nl;7
+Bible;2 Samuel;bible//2 Samuel;nl;7
+Bible;1 Kings;bible//1 Kings;nl;7
+Bible;2 Kings;bible//2 Kings;nl;7
+Bible;1 Chronicles;bible//1 Chronicles;nl;7
+Bible;2 Chronicles;bible//2 Chronicles;nl;7
+Bible;Ezra;bible//Ezra;nl;7
+Bible;Nehemiah;bible//Nehemiah;nl;7
+Bible;Esther;bible//Esther;nl;7
+Bible;Job;bible//Job;nl;7
+Bible;Psalms;bible//Psalms;nl;7
+Bible;Proverbs;bible//Proverbs;nl;7
+Bible;Ecclesiastes;bible//Ecclesiastes;nl;7
+Bible;Song of Solomon;bible//Song of Solomon;nl;7
+Bible;Isaiah;bible//Isaiah;nl;7
+Bible;Jeremiah;bible//Jeremiah;nl;7
+Bible;Lamentations;bible//Lamentations;nl;7
+Bible;Ezekiel;bible//Ezekiel;nl;7
+Bible;Daniel;bible//Daniel;nl;7
+Bible;Hosea;bible//Hosea;nl;7
+Bible;Joel;bible//Joel;nl;7
+Bible;Amos;bible//Amos;nl;7
+Bible;Obadiah;bible//Obadiah;nl;7
+Bible;Jonah;bible//Jonah;nl;7
+Bible;Micah;bible//Micah;nl;7
+Bible;Nahum;bible//Nahum;nl;7
+Bible;Habakkuk;bible//Habakkuk;nl;7
+Bible;Zephaniah;bible//Zephaniah;nl;7
+Bible;Haggai;bible//Haggai;nl;7
+Bible;Zechariah;bible//Zechariah;nl;7
+Bible;Malachi;bible//Malachi;nl;7
+Bible;Matthew;bible//Matthew;nl;7
+Bible;Mark;bible//Mark;nl;7
+Bible;Luke;bible//Luke;nl;7
+Bible;John;bible//John;nl;7
+Bible;Acts;bible//Acts;nl;7
+Bible;Romans;bible//Romans;nl;7
+Bible;1 Corinthians;bible//1 Corinthians;nl;7
+Bible;2 Corinthians;bible//2 Corinthians;nl;7
+Bible;Galatians;bible//Galatians;nl;7
+Bible;Ephesians;bible//Ephesians;nl;7
+Bible;Philippians;bible//Philippians;nl;7
+Bible;Colossians;bible//Colossians;nl;7
+Bible;1 Thessalonians;bible//1 Thessalonians;nl;7
+Bible;2 Thessalonians;bible//2 Thessalonians;nl;7
+Bible;1 Timothy;bible//1 Timothy;nl;7
+Bible;2 Timothy;bible//2 Timothy;nl;7
+Bible;Titus;bible//Titus;nl;7
+Bible;Philemon;bible//Philemon;nl;7
+Bible;Hebrews;bible//Hebrews;nl;7
+Bible;James;bible//James;nl;7
+Bible;1 Peter;bible//1 Peter;nl;7
+Bible;2 Peter;bible//2 Peter;nl;7
+Bible;1 John;bible//1 John;nl;7
+Bible;2 John;bible//2 John;nl;7
+Bible;3 John;bible//3 John;nl;7
+Bible;Jude;bible//Jude;nl;7
+Bible;Revelation;bible//Revelation;nl;7
+Bible;Genesis;bible//Genesis;it;7
+Bible;Exodus;bible//Exodus;it;7
+Bible;Leviticus;bible//Leviticus;it;7
+Bible;Numbers;bible//Numbers;it;7
+Bible;Deuteronomy;bible//Deuteronomy;it;7
+Bible;Joshua;bible//Joshua;it;7
+Bible;Judges;bible//Judges;it;7
+Bible;Ruth;bible//Ruth;it;7
+Bible;1 Samuel;bible//1 Samuel;it;7
+Bible;2 Samuel;bible//2 Samuel;it;7
+Bible;1 Kings;bible//1 Kings;it;7
+Bible;2 Kings;bible//2 Kings;it;7
+Bible;1 Chronicles;bible//1 Chronicles;it;7
+Bible;2 Chronicles;bible//2 Chronicles;it;7
+Bible;Ezra;bible//Ezra;it;7
+Bible;Nehemiah;bible//Nehemiah;it;7
+Bible;Esther;bible//Esther;it;7
+Bible;Job;bible//Job;it;7
+Bible;Psalms;bible//Psalms;it;7
+Bible;Proverbs;bible//Proverbs;it;7
+Bible;Ecclesiastes;bible//Ecclesiastes;it;7
+Bible;Song of Solomon;bible//Song of Solomon;it;7
+Bible;Isaiah;bible//Isaiah;it;7
+Bible;Jeremiah;bible//Jeremiah;it;7
+Bible;Lamentations;bible//Lamentations;it;7
+Bible;Ezekiel;bible//Ezekiel;it;7
+Bible;Daniel;bible//Daniel;it;7
+Bible;Hosea;bible//Hosea;it;7
+Bible;Joel;bible//Joel;it;7
+Bible;Amos;bible//Amos;it;7
+Bible;Obadiah;bible//Obadiah;it;7
+Bible;Jonah;bible//Jonah;it;7
+Bible;Micah;bible//Micah;it;7
+Bible;Nahum;bible//Nahum;it;7
+Bible;Habakkuk;bible//Habakkuk;it;7
+Bible;Zephaniah;bible//Zephaniah;it;7
+Bible;Haggai;bible//Haggai;it;7
+Bible;Zechariah;bible//Zechariah;it;7
+Bible;Malachi;bible//Malachi;it;7
+Bible;Matthew;bible//Matthew;it;7
+Bible;Mark;bible//Mark;it;7
+Bible;Luke;bible//Luke;it;7
+Bible;John;bible//John;it;7
+Bible;Acts;bible//Acts;it;7
+Bible;Romans;bible//Romans;it;7
+Bible;1 Corinthians;bible//1 Corinthians;it;7
+Bible;2 Corinthians;bible//2 Corinthians;it;7
+Bible;Galatians;bible//Galatians;it;7
+Bible;Ephesians;bible//Ephesians;it;7
+Bible;Philippians;bible//Philippians;it;7
+Bible;Colossians;bible//Colossians;it;7
+Bible;1 Thessalonians;bible//1 Thessalonians;it;7
+Bible;2 Thessalonians;bible//2 Thessalonians;it;7
+Bible;1 Timothy;bible//1 Timothy;it;7
+Bible;2 Timothy;bible//2 Timothy;it;7
+Bible;Titus;bible//Titus;it;7
+Bible;Philemon;bible//Philemon;it;7
+Bible;Hebrews;bible//Hebrews;it;7
+Bible;James;bible//James;it;7
+Bible;1 Peter;bible//1 Peter;it;7
+Bible;2 Peter;bible//2 Peter;it;7
+Bible;1 John;bible//1 John;it;7
+Bible;2 John;bible//2 John;it;7
+Bible;3 John;bible//3 John;it;7
+Bible;Jude;bible//Jude;it;7
+Bible;Revelation;bible//Revelation;it;7
+Bible;Genesis;bible//Genesis;pt;7
+Bible;Exodus;bible//Exodus;pt;7
+Bible;Leviticus;bible//Leviticus;pt;7
+Bible;Numbers;bible//Numbers;pt;7
+Bible;Deuteronomy;bible//Deuteronomy;pt;7
+Bible;Joshua;bible//Joshua;pt;7
+Bible;Judges;bible//Judges;pt;7
+Bible;Ruth;bible//Ruth;pt;7
+Bible;1 Samuel;bible//1 Samuel;pt;7
+Bible;2 Samuel;bible//2 Samuel;pt;7
+Bible;1 Kings;bible//1 Kings;pt;7
+Bible;2 Kings;bible//2 Kings;pt;7
+Bible;1 Chronicles;bible//1 Chronicles;pt;7
+Bible;2 Chronicles;bible//2 Chronicles;pt;7
+Bible;Ezra;bible//Ezra;pt;7
+Bible;Nehemiah;bible//Nehemiah;pt;7
+Bible;Esther;bible//Esther;pt;7
+Bible;Job;bible//Job;pt;7
+Bible;Psalms;bible//Psalms;pt;7
+Bible;Proverbs;bible//Proverbs;pt;7
+Bible;Ecclesiastes;bible//Ecclesiastes;pt;7
+Bible;Song of Solomon;bible//Song of Solomon;pt;7
+Bible;Isaiah;bible//Isaiah;pt;7
+Bible;Jeremiah;bible//Jeremiah;pt;7
+Bible;Lamentations;bible//Lamentations;pt;7
+Bible;Ezekiel;bible//Ezekiel;pt;7
+Bible;Daniel;bible//Daniel;pt;7
+Bible;Hosea;bible//Hosea;pt;7
+Bible;Joel;bible//Joel;pt;7
+Bible;Amos;bible//Amos;pt;7
+Bible;Obadiah;bible//Obadiah;pt;7
+Bible;Jonah;bible//Jonah;pt;7
+Bible;Micah;bible//Micah;pt;7
+Bible;Nahum;bible//Nahum;pt;7
+Bible;Habakkuk;bible//Habakkuk;pt;7
+Bible;Zephaniah;bible//Zephaniah;pt;7
+Bible;Haggai;bible//Haggai;pt;7
+Bible;Zechariah;bible//Zechariah;pt;7
+Bible;Malachi;bible//Malachi;pt;7
+Bible;Matthew;bible//Matthew;pt;7
+Bible;Mark;bible//Mark;pt;7
+Bible;Luke;bible//Luke;pt;7
+Bible;John;bible//John;pt;7
+Bible;Acts;bible//Acts;pt;7
+Bible;Romans;bible//Romans;pt;7
+Bible;1 Corinthians;bible//1 Corinthians;pt;7
+Bible;2 Corinthians;bible//2 Corinthians;pt;7
+Bible;Galatians;bible//Galatians;pt;7
+Bible;Ephesians;bible//Ephesians;pt;7
+Bible;Philippians;bible//Philippians;pt;7
+Bible;Colossians;bible//Colossians;pt;7
+Bible;1 Thessalonians;bible//1 Thessalonians;pt;7
+Bible;2 Thessalonians;bible//2 Thessalonians;pt;7
+Bible;1 Timothy;bible//1 Timothy;pt;7
+Bible;2 Timothy;bible//2 Timothy;pt;7
+Bible;Titus;bible//Titus;pt;7
+Bible;Philemon;bible//Philemon;pt;7
+Bible;Hebrews;bible//Hebrews;pt;7
+Bible;James;bible//James;pt;7
+Bible;1 Peter;bible//1 Peter;pt;7
+Bible;2 Peter;bible//2 Peter;pt;7
+Bible;1 John;bible//1 John;pt;7
+Bible;2 John;bible//2 John;pt;7
+Bible;3 John;bible//3 John;pt;7
+Bible;Jude;bible//Jude;pt;7
+Bible;Revelation;bible//Revelation;pt;7
+Bible;Genesis;bible//Genesis;ru;7
+Bible;Exodus;bible//Exodus;ru;7
+Bible;Leviticus;bible//Leviticus;ru;7
+Bible;Numbers;bible//Numbers;ru;7
+Bible;Deuteronomy;bible//Deuteronomy;ru;7
+Bible;Joshua;bible//Joshua;ru;7
+Bible;Judges;bible//Judges;ru;7
+Bible;Ruth;bible//Ruth;ru;7
+Bible;1 Samuel;bible//1 Samuel;ru;7
+Bible;2 Samuel;bible//2 Samuel;ru;7
+Bible;1 Kings;bible//1 Kings;ru;7
+Bible;2 Kings;bible//2 Kings;ru;7
+Bible;1 Chronicles;bible//1 Chronicles;ru;7
+Bible;2 Chronicles;bible//2 Chronicles;ru;7
+Bible;Ezra;bible//Ezra;ru;7
+Bible;Nehemiah;bible//Nehemiah;ru;7
+Bible;Esther;bible//Esther;ru;7
+Bible;Job;bible//Job;ru;7
+Bible;Psalms;bible//Psalms;ru;7
+Bible;Proverbs;bible//Proverbs;ru;7
+Bible;Ecclesiastes;bible//Ecclesiastes;ru;7
+Bible;Song of Solomon;bible//Song of Solomon;ru;7
+Bible;Isaiah;bible//Isaiah;ru;7
+Bible;Jeremiah;bible//Jeremiah;ru;7
+Bible;Lamentations;bible//Lamentations;ru;7
+Bible;Ezekiel;bible//Ezekiel;ru;7
+Bible;Daniel;bible//Daniel;ru;7
+Bible;Hosea;bible//Hosea;ru;7
+Bible;Joel;bible//Joel;ru;7
+Bible;Amos;bible//Amos;ru;7
+Bible;Obadiah;bible//Obadiah;ru;7
+Bible;Jonah;bible//Jonah;ru;7
+Bible;Micah;bible//Micah;ru;7
+Bible;Nahum;bible//Nahum;ru;7
+Bible;Habakkuk;bible//Habakkuk;ru;7
+Bible;Zephaniah;bible//Zephaniah;ru;7
+Bible;Haggai;bible//Haggai;ru;7
+Bible;Zechariah;bible//Zechariah;ru;7
+Bible;Malachi;bible//Malachi;ru;7
+Bible;Matthew;bible//Matthew;ru;7
+Bible;Mark;bible//Mark;ru;7
+Bible;Luke;bible//Luke;ru;7
+Bible;John;bible//John;ru;7
+Bible;Acts;bible//Acts;ru;7
+Bible;Romans;bible//Romans;ru;7
+Bible;1 Corinthians;bible//1 Corinthians;ru;7
+Bible;2 Corinthians;bible//2 Corinthians;ru;7
+Bible;Galatians;bible//Galatians;ru;7
+Bible;Ephesians;bible//Ephesians;ru;7
+Bible;Philippians;bible//Philippians;ru;7
+Bible;Colossians;bible//Colossians;ru;7
+Bible;1 Thessalonians;bible//1 Thessalonians;ru;7
+Bible;2 Thessalonians;bible//2 Thessalonians;ru;7
+Bible;1 Timothy;bible//1 Timothy;ru;7
+Bible;2 Timothy;bible//2 Timothy;ru;7
+Bible;Titus;bible//Titus;ru;7
+Bible;Philemon;bible//Philemon;ru;7
+Bible;Hebrews;bible//Hebrews;ru;7
+Bible;James;bible//James;ru;7
+Bible;1 Peter;bible//1 Peter;ru;7
+Bible;2 Peter;bible//2 Peter;ru;7
+Bible;1 John;bible//1 John;ru;7
+Bible;2 John;bible//2 John;ru;7
+Bible;3 John;bible//3 John;ru;7
+Bible;Jude;bible//Jude;ru;7
+Bible;Revelation;bible//Revelation;ru;7
+Bible;Genesis;bible//Genesis;fr;7
+Bible;Exodus;bible//Exodus;fr;7
+Bible;Leviticus;bible//Leviticus;fr;7
+Bible;Numbers;bible//Numbers;fr;7
+Bible;Deuteronomy;bible//Deuteronomy;fr;7
+Bible;Joshua;bible//Joshua;fr;7
+Bible;Judges;bible//Judges;fr;7
+Bible;Ruth;bible//Ruth;fr;7
+Bible;1 Samuel;bible//1 Samuel;fr;7
+Bible;2 Samuel;bible//2 Samuel;fr;7
+Bible;1 Kings;bible//1 Kings;fr;7
+Bible;2 Kings;bible//2 Kings;fr;7
+Bible;1 Chronicles;bible//1 Chronicles;fr;7
+Bible;2 Chronicles;bible//2 Chronicles;fr;7
+Bible;Ezra;bible//Ezra;fr;7
+Bible;Nehemiah;bible//Nehemiah;fr;7
+Bible;Esther;bible//Esther;fr;7
+Bible;Job;bible//Job;fr;7
+Bible;Psalms;bible//Psalms;fr;7
+Bible;Proverbs;bible//Proverbs;fr;7
+Bible;Ecclesiastes;bible//Ecclesiastes;fr;7
+Bible;Song of Solomon;bible//Song of Solomon;fr;7
+Bible;Isaiah;bible//Isaiah;fr;7
+Bible;Jeremiah;bible//Jeremiah;fr;7
+Bible;Lamentations;bible//Lamentations;fr;7
+Bible;Ezekiel;bible//Ezekiel;fr;7
+Bible;Daniel;bible//Daniel;fr;7
+Bible;Hosea;bible//Hosea;fr;7
+Bible;Joel;bible//Joel;fr;7
+Bible;Amos;bible//Amos;fr;7
+Bible;Obadiah;bible//Obadiah;fr;7
+Bible;Jonah;bible//Jonah;fr;7
+Bible;Micah;bible//Micah;fr;7
+Bible;Nahum;bible//Nahum;fr;7
+Bible;Habakkuk;bible//Habakkuk;fr;7
+Bible;Zephaniah;bible//Zephaniah;fr;7
+Bible;Haggai;bible//Haggai;fr;7
+Bible;Zechariah;bible//Zechariah;fr;7
+Bible;Malachi;bible//Malachi;fr;7
+Bible;Matthew;bible//Matthew;fr;7
+Bible;Mark;bible//Mark;fr;7
+Bible;Luke;bible//Luke;fr;7
+Bible;John;bible//John;fr;7
+Bible;Acts;bible//Acts;fr;7
+Bible;Romans;bible//Romans;fr;7
+Bible;1 Corinthians;bible//1 Corinthians;fr;7
+Bible;2 Corinthians;bible//2 Corinthians;fr;7
+Bible;Galatians;bible//Galatians;fr;7
+Bible;Ephesians;bible//Ephesians;fr;7
+Bible;Philippians;bible//Philippians;fr;7
+Bible;Colossians;bible//Colossians;fr;7
+Bible;1 Thessalonians;bible//1 Thessalonians;fr;7
+Bible;2 Thessalonians;bible//2 Thessalonians;fr;7
+Bible;1 Timothy;bible//1 Timothy;fr;7
+Bible;2 Timothy;bible//2 Timothy;fr;7
+Bible;Titus;bible//Titus;fr;7
+Bible;Philemon;bible//Philemon;fr;7
+Bible;Hebrews;bible//Hebrews;fr;7
+Bible;James;bible//James;fr;7
+Bible;1 Peter;bible//1 Peter;fr;7
+Bible;2 Peter;bible//2 Peter;fr;7
+Bible;1 John;bible//1 John;fr;7
+Bible;2 John;bible//2 John;fr;7
+Bible;3 John;bible//3 John;fr;7
+Bible;Jude;bible//Jude;fr;7
+Bible;Revelation;bible//Revelation;fr;7
+Bible;Genesis;bible//Genesis;de;7
+Bible;Exodus;bible//Exodus;de;7
+Bible;Leviticus;bible//Leviticus;de;7
+Bible;Numbers;bible//Numbers;de;7
+Bible;Deuteronomy;bible//Deuteronomy;de;7
+Bible;Joshua;bible//Joshua;de;7
+Bible;Judges;bible//Judges;de;7
+Bible;Ruth;bible//Ruth;de;7
+Bible;1 Samuel;bible//1 Samuel;de;7
+Bible;2 Samuel;bible//2 Samuel;de;7
+Bible;1 Kings;bible//1 Kings;de;7
+Bible;2 Kings;bible//2 Kings;de;7
+Bible;1 Chronicles;bible//1 Chronicles;de;7
+Bible;2 Chronicles;bible//2 Chronicles;de;7
+Bible;Ezra;bible//Ezra;de;7
+Bible;Nehemiah;bible//Nehemiah;de;7
+Bible;Esther;bible//Esther;de;7
+Bible;Job;bible//Job;de;7
+Bible;Psalms;bible//Psalms;de;7
+Bible;Proverbs;bible//Proverbs;de;7
+Bible;Ecclesiastes;bible//Ecclesiastes;de;7
+Bible;Song of Solomon;bible//Song of Solomon;de;7
+Bible;Isaiah;bible//Isaiah;de;7
+Bible;Jeremiah;bible//Jeremiah;de;7
+Bible;Lamentations;bible//Lamentations;de;7
+Bible;Ezekiel;bible//Ezekiel;de;7
+Bible;Daniel;bible//Daniel;de;7
+Bible;Hosea;bible//Hosea;de;7
+Bible;Joel;bible//Joel;de;7
+Bible;Amos;bible//Amos;de;7
+Bible;Obadiah;bible//Obadiah;de;7
+Bible;Jonah;bible//Jonah;de;7
+Bible;Micah;bible//Micah;de;7
+Bible;Nahum;bible//Nahum;de;7
+Bible;Habakkuk;bible//Habakkuk;de;7
+Bible;Zephaniah;bible//Zephaniah;de;7
+Bible;Haggai;bible//Haggai;de;7
+Bible;Zechariah;bible//Zechariah;de;7
+Bible;Malachi;bible//Malachi;de;7
+Bible;Matthew;bible//Matthew;de;7
+Bible;Mark;bible//Mark;de;7
+Bible;Luke;bible//Luke;de;7
+Bible;John;bible//John;de;7
+Bible;Acts;bible//Acts;de;7
+Bible;Romans;bible//Romans;de;7
+Bible;1 Corinthians;bible//1 Corinthians;de;7
+Bible;2 Corinthians;bible//2 Corinthians;de;7
+Bible;Galatians;bible//Galatians;de;7
+Bible;Ephesians;bible//Ephesians;de;7
+Bible;Philippians;bible//Philippians;de;7
+Bible;Colossians;bible//Colossians;de;7
+Bible;1 Thessalonians;bible//1 Thessalonians;de;7
+Bible;2 Thessalonians;bible//2 Thessalonians;de;7
+Bible;1 Timothy;bible//1 Timothy;de;7
+Bible;2 Timothy;bible//2 Timothy;de;7
+Bible;Titus;bible//Titus;de;7
+Bible;Philemon;bible//Philemon;de;7
+Bible;Hebrews;bible//Hebrews;de;7
+Bible;James;bible//James;de;7
+Bible;1 Peter;bible//1 Peter;de;7
+Bible;2 Peter;bible//2 Peter;de;7
+Bible;1 John;bible//1 John;de;7
+Bible;2 John;bible//2 John;de;7
+Bible;3 John;bible//3 John;de;7
+Bible;Jude;bible//Jude;de;7
+Bible;Revelation;bible//Revelation;de;7
+Bible;Genesis;bible//Genesis;es;7
+Bible;Exodus;bible//Exodus;es;7
+Bible;Leviticus;bible//Leviticus;es;7
+Bible;Numbers;bible//Numbers;es;7
+Bible;Deuteronomy;bible//Deuteronomy;es;7
+Bible;Joshua;bible//Joshua;es;7
+Bible;Judges;bible//Judges;es;7
+Bible;Ruth;bible//Ruth;es;7
+Bible;1 Samuel;bible//1 Samuel;es;7
+Bible;2 Samuel;bible//2 Samuel;es;7
+Bible;1 Kings;bible//1 Kings;es;7
+Bible;2 Kings;bible//2 Kings;es;7
+Bible;1 Chronicles;bible//1 Chronicles;es;7
+Bible;2 Chronicles;bible//2 Chronicles;es;7
+Bible;Ezra;bible//Ezra;es;7
+Bible;Nehemiah;bible//Nehemiah;es;7
+Bible;Esther;bible//Esther;es;7
+Bible;Job;bible//Job;es;7
+Bible;Psalms;bible//Psalms;es;7
+Bible;Proverbs;bible//Proverbs;es;7
+Bible;Ecclesiastes;bible//Ecclesiastes;es;7
+Bible;Song of Solomon;bible//Song of Solomon;es;7
+Bible;Isaiah;bible//Isaiah;es;7
+Bible;Jeremiah;bible//Jeremiah;es;7
+Bible;Lamentations;bible//Lamentations;es;7
+Bible;Ezekiel;bible//Ezekiel;es;7
+Bible;Daniel;bible//Daniel;es;7
+Bible;Hosea;bible//Hosea;es;7
+Bible;Joel;bible//Joel;es;7
+Bible;Amos;bible//Amos;es;7
+Bible;Obadiah;bible//Obadiah;es;7
+Bible;Jonah;bible//Jonah;es;7
+Bible;Micah;bible//Micah;es;7
+Bible;Nahum;bible//Nahum;es;7
+Bible;Habakkuk;bible//Habakkuk;es;7
+Bible;Zephaniah;bible//Zephaniah;es;7
+Bible;Haggai;bible//Haggai;es;7
+Bible;Zechariah;bible//Zechariah;es;7
+Bible;Malachi;bible//Malachi;es;7
+Bible;Matthew;bible//Matthew;es;7
+Bible;Mark;bible//Mark;es;7
+Bible;Luke;bible//Luke;es;7
+Bible;John;bible//John;es;7
+Bible;Acts;bible//Acts;es;7
+Bible;Romans;bible//Romans;es;7
+Bible;1 Corinthians;bible//1 Corinthians;es;7
+Bible;2 Corinthians;bible//2 Corinthians;es;7
+Bible;Galatians;bible//Galatians;es;7
+Bible;Ephesians;bible//Ephesians;es;7
+Bible;Philippians;bible//Philippians;es;7
+Bible;Colossians;bible//Colossians;es;7
+Bible;1 Thessalonians;bible//1 Thessalonians;es;7
+Bible;2 Thessalonians;bible//2 Thessalonians;es;7
+Bible;1 Timothy;bible//1 Timothy;es;7
+Bible;2 Timothy;bible//2 Timothy;es;7
+Bible;Titus;bible//Titus;es;7
+Bible;Philemon;bible//Philemon;es;7
+Bible;Hebrews;bible//Hebrews;es;7
+Bible;James;bible//James;es;7
+Bible;1 Peter;bible//1 Peter;es;7
+Bible;2 Peter;bible//2 Peter;es;7
+Bible;1 John;bible//1 John;es;7
+Bible;2 John;bible//2 John;es;7
+Bible;3 John;bible//3 John;es;7
+Bible;Jude;bible//Jude;es;7
+Bible;Revelation;bible//Revelation;es;7
+Bible;Genesis;bible//Genesis;en;7
+Bible;Exodus;bible//Exodus;en;7
+Bible;Leviticus;bible//Leviticus;en;7
+Bible;Numbers;bible//Numbers;en;7
+Bible;Deuteronomy;bible//Deuteronomy;en;7
+Bible;Joshua;bible//Joshua;en;7
+Bible;Judges;bible//Judges;en;7
+Bible;Ruth;bible//Ruth;en;7
+Bible;1 Samuel;bible//1 Samuel;en;7
+Bible;2 Samuel;bible//2 Samuel;en;7
+Bible;1 Kings;bible//1 Kings;en;7
+Bible;2 Kings;bible//2 Kings;en;7
+Bible;1 Chronicles;bible//1 Chronicles;en;7
+Bible;2 Chronicles;bible//2 Chronicles;en;7
+Bible;Ezra;bible//Ezra;en;7
+Bible;Nehemiah;bible//Nehemiah;en;7
+Bible;Esther;bible//Esther;en;7
+Bible;Job;bible//Job;en;7
+Bible;Psalms;bible//Psalms;en;7
+Bible;Proverbs;bible//Proverbs;en;7
+Bible;Ecclesiastes;bible//Ecclesiastes;en;7
+Bible;Song of Solomon;bible//Song of Solomon;en;7
+Bible;Isaiah;bible//Isaiah;en;7
+Bible;Jeremiah;bible//Jeremiah;en;7
+Bible;Lamentations;bible//Lamentations;en;7
+Bible;Ezekiel;bible//Ezekiel;en;7
+Bible;Daniel;bible//Daniel;en;7
+Bible;Hosea;bible//Hosea;en;7
+Bible;Joel;bible//Joel;en;7
+Bible;Amos;bible//Amos;en;7
+Bible;Obadiah;bible//Obadiah;en;7
+Bible;Jonah;bible//Jonah;en;7
+Bible;Micah;bible//Micah;en;7
+Bible;Nahum;bible//Nahum;en;7
+Bible;Habakkuk;bible//Habakkuk;en;7
+Bible;Zephaniah;bible//Zephaniah;en;7
+Bible;Haggai;bible//Haggai;en;7
+Bible;Zechariah;bible//Zechariah;en;7
+Bible;Malachi;bible//Malachi;en;7
+Bible;Matthew;bible//Matthew;en;7
+Bible;Mark;bible//Mark;en;7
+Bible;Luke;bible//Luke;en;7
+Bible;John;bible//John;en;7
+Bible;Acts;bible//Acts;en;7
+Bible;Romans;bible//Romans;en;7
+Bible;1 Corinthians;bible//1 Corinthians;en;7
+Bible;2 Corinthians;bible//2 Corinthians;en;7
+Bible;Galatians;bible//Galatians;en;7
+Bible;Ephesians;bible//Ephesians;en;7
+Bible;Philippians;bible//Philippians;en;7
+Bible;Colossians;bible//Colossians;en;7
+Bible;1 Thessalonians;bible//1 Thessalonians;en;7
+Bible;2 Thessalonians;bible//2 Thessalonians;en;7
+Bible;1 Timothy;bible//1 Timothy;en;7
+Bible;2 Timothy;bible//2 Timothy;en;7
+Bible;Titus;bible//Titus;en;7
+Bible;Philemon;bible//Philemon;en;7
+Bible;Hebrews;bible//Hebrews;en;7
+Bible;James;bible//James;en;7
+Bible;1 Peter;bible//1 Peter;en;7
+Bible;2 Peter;bible//2 Peter;en;7
+Bible;1 John;bible//1 John;en;7
+Bible;2 John;bible//2 John;en;7
+Bible;3 John;bible//3 John;en;7
+Bible;Jude;bible//Jude;en;7
+Bible;Revelation;bible//Revelation;en;7

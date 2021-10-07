@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE" xmlns:font-size="http://www.w3.org/1999/xhtml">
+
+
+<html>
+<head>
+    <script type="text/javascript" src="textToSpeech.js"></script>
+    <script type="text/javascript" src="dep.js"></script>
+    <script type="text/javascript" src="words_handler.js"></script>
+    <script type="text/javascript" src="api_requests.js"></script>
+    <script type="text/javascript" src="jokes.js"></script>
+
+    <script src="./p5.js"></script>
+    <script src="./p5.speech.js"></script>
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css"/>
+
+
+    <link rel="icon"
+          type="image/svg"
+          href="images/flags/ru.svg">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Speaking</title>
+
+</head>
+<body>
+
+<!-- Draw the action buttons -->
+
+<div id="selector">
+    <label for="levels" style="font-size: 24px; color: white">Difficulty: </label>
+    <input type="range" min="1" max="100" value="0" class="slider" id="levels" style="width: 200px">
+
+    <div>
+        <input type="checkbox" id="nlc" name="nlc"
+               checked>
+        <label for="nlc" style="color: white; font-size: 24px">Native language translations</label>
+    </div>
+
+    <br>
+
+    <br>
+    <button id="start" onclick="start_the_whole_thing()" class="mybutton" style="width: 210px; color:white">Start</button>
+
+</div>
+
+<section id='main_content' hidden="true">
+    <nav>
+
+        <div id="question_blank">
+            <button id="next" class="mybutton" style="width: 150px; color: white" onclick="pressFirst()">Next/reveal</button>
+            <button id="stop" class="mybutton" style="width: 150px; color: white" onclick="pressSecond()">Stop</button>
+            <p id="question" style="width: 300px; font-size: 24px">
+            </p>
+        </div>
+
+        <hr>
+        <div id="answer_blank">
+            <p id="answer" style="width: 300px; font-size: 24px"></p>
+            <hr>
+            <p id="ans" style="width: 300px; font-size: 24px"></p>
+        </div>
+    </nav>
+
+    <article>
+
+
+        <table>
+            <td width="30%" id="prono_part" style="color: white">
+
+            </td>
+
+            <td width="30%" id="ety_part" style="color: white">
+
+            </td>
+
+
+        </table>
+
+        <p id="content" style="font-size: 16px"></p>
+
+    </article>
+</section>
+
+
+<script>
+    let dfc = 0
+    let correct_answer;
+    let question;
+    let currentAnswer = ""
+    let answerRevealed = false
+    let isRecording = false
+    let isReading = true
+
+    function startRecording() {
+        isRecording = true
+        currentAnswer = ""
+        speech.start(true, false);
+    }
+
+
+    function stopRecording(){
+        isRecording = false
+        handleText(currentAnswer, function (fff1) {
+            ht = fff1
+            document.getElementById("answer").innerHTML = ht
+            //document.getElementById("next").innerHTML = "Next/reveal"
+            //document.getElementById("stop").innerHTML = "Try again"
+
+            //document.getElementById("question_blank").hidden = true
+            //document.getElementById("answer_blank").hidden = false
+        })
+    }
+
+    function gotSpeech(){
+        currentAnswer += speech.resultString+"<br>"
+        console.log("result ", speech.resultString)
+    }
+
+
+    function revealAnswer(){
+        document.getElementById("ans").hidden = false;
+        //document.getElementById("next").hidden = false;
+        answerRevealed = true
+    }
+
+    function do_next() {
+        document.getElementById("answer").innerHTML = ""
+        document.getElementById("question").innerHTML = ""
+
+        lv = level
+        if (lv == 2) {
+            if (Math.random() < 0.5) {
+                lv = 1
+            }
+        }
+
+        //recordingslist.innerHTML = ""
+        ___api_speaking_phrase(dfc, "", function (txt) {
+            ssss = txt.split("^^^")
+            correct_answer = ssss[0]
+
+            question = ssss[1]
+            //hash = ssss[2]
+
+            //document.getElementById("next").innerText = "Again"
+            document.getElementById("stop").innerText = "Stop"
+            document.getElementById("answer").innerHTML = ""
+
+            //handleTextSearch(question, function (fff1) {
+                document.getElementById("question").innerHTML = question;//handle_for_search(fff1)
+            //});
+
+            answerRevealed = false
+            if(!isReading) {
+                document.getElementById("ans").hidden = true
+                document.getElementById("next").innerText = "Reveal";
+            }
+            else{
+                answerRevealed = true
+                document.getElementById("next").innerText = "Next"
+            }
+            document.getElementById("next").disabled = true;
+
+            handleText(correct_answer, function (fff1) {
+                ht = fff1
+                document.getElementById("ans").innerHTML = fff1
+            });
+
+            startRecording()
+        })
+    }
+
+    accept_lang()
+    init_native_lang()
+
+    //native_lang = 4;
+    level = -1
+
+    function handle_for_search(fn) {
+        res = ""
+
+        rest = fn
+        while (rest.indexOf("hndwrd(") != -1) {
+            before = rest.substr(0, rest.indexOf("hndwrd("))
+            after = rest.substr(rest.indexOf("hndwrd("))
+            inner = after.substr(0, after.indexOf(')'))
+            rest = after.substr(after.indexOf(')'))
+
+            res += before
+            ws = inner.split('|')
+            sep = ws[0].split('=')
+            res += "hndwrd(\'$1" + sep[2] + ''
+        }
+
+        res += rest
+
+
+        return res
+    }
+
+
+
+
+    function pressFirst(){
+        if(!isRecording) {
+            if (!answerRevealed) {
+                revealAnswer()
+                document.getElementById("next").innerText = "Next";
+            } else {
+                document.getElementById("question").innerHTML = ""
+                document.getElementById("ans").innerText = ""
+                do_next()
+            }
+        }
+    }
+
+    function pressSecond(){
+        if(isRecording){
+            speech.stop();
+            document.getElementById("next").style.display = "visible";
+            if(answerRevealed) {
+                document.getElementById("ans").hidden = false
+            }
+            document.getElementById("next").disabled = false;
+            document.getElementById("stop").innerText = "Again"
+        }
+        else{
+            if(!isReading) {
+                document.getElementById("ans").hidden = true
+            }
+            document.getElementById("next").disabled = true;
+            document.getElementById("stop").innerText = "Stop"
+            document.getElementById("answer").innerHTML = ""
+            startRecording()
+        }
+    }
+
+    function start_the_whole_thing() {
+        if(!document.getElementById("nlc").checked){
+            if(main_lang != 0){
+                native_lang = 0
+            }
+        }
+        document.getElementById("selector").hidden = true
+        document.getElementById("main_content").hidden = false
+        dfc = document.getElementById('levels').value
+        do_next()
+    }
+
+    inittts()
+
+    dfc = 10
+    //main_lang = 7
+    //native_lang = 4
+    isReading = false
+
+    cont = document.getElementById("content")
+    ety = document.getElementById("ety_part")
+    prono = document.getElementById("prono_part")
+    let speech = new p5.SpeechRec(std_langs[main_lang], gotSpeech)
+
+    speech.onEnd = stopRecording
+</script>
+
+
+<!-- Include the recorder.js library from a local copy -->
+<script src="recorder.js"></script>
+</body>
+</html>
