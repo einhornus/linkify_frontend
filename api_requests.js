@@ -1,5 +1,5 @@
 
-let ___debug = true
+let ___debug = false
 
 let articles_hash = {}
 let reverso_hash = {}
@@ -239,7 +239,6 @@ function ___api_search_(word, type)
     }
     else{
         rawFile.open("GET", ___api_get_root(mainPort) + "search?lang=" + std_langs[main_lang] + "&word=" + word + "&type=" + type+"&source="+std_langs[native_lang], false);
-
     }
     rawFile.onreadystatechange = function ()
     {

@@ -1,121 +1,397 @@
 <!DOCTYPE html>
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Linkify</title>
 
+    <script type="text/javascript" src="dep.js"></script>
     <script type="text/javascript" src="textToSpeech.js"></script>
+    <link rel="icon"
+          type="image/svg"
+          href="images/logo2.png">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="autocomplete_handler.js"></script>
+
 
 </head>
 
-<style>
-    body {
-        background-color: var(--primary-color);
-    }
-
-    p, textarea, input {
-        font-size: 15px;
-        color: var(--secondary-color);
-        background-color: var(--primary-color);
-    }
-
-
-    table.reverso_table td {
-        width: 50%;
-        overflow: hidden;
-        vertical-align: top;
-        border: 1px dotted var(--secondary-color);
-    }
-
-
-    :root {
-        --primary-color: #333333;
-        --secondary-color: white;
-    }
-
-
-    a:link {color: cyan; text-decoration: none;}
-    a:visited {color: cyan; text-decoration: none;}
-    a:hover {color: cyan; text-decoration:underline}
-
-    a.normal:link {color: #dddddd; text-decoration: none;}
-    a.normal:visited {color: #dddddd; text-decoration: none;}
-    a.normal:hover {color: #dddddd; text-decoration:underline}
-
-    table {
-        width: 100%;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    table.center td {
-        width: 50%;
-        overflow: hidden;
-        vertical-align: top;
-        border: 1px dotted var(--secondary-color);
-    }
-
-
-</style>
 
 <body>
-<p id = 'article'>
+
+
+<table>
+    <td width="10%">
+        <a href="#" onclick="doback()">
+            <img src="images//prev.svg" title="Previous page (hotkey: left arrow key)"
+                 style="width:40px;height:40px;">
+        </a>
+    </td>
+
+    <td width="10%">
+        <a href="#" onclick="dosnd()">
+            <img src="images//audio.png" title="Sound out (hotkey: S)"
+                 style="width:40px;height:40px;">
+        </a>
+    </td>
+
+    <td width="45%">
+        <p id='header'>
+    </td>
+
+
+    <td width="35%">
+        <table>
+            <td width="10%">
+                <input id="searchfield" value="" type="text" placeholder="Search: put an English word here"
+                       style="height: 40px; width: 300px; border-radius: 5px; background-color: lightgray; color: black">
+            </td>
+
+            <td width="90%">
+                <a href="#" onclick="dosearch()" style="padding-top: 200px">
+                    <img src="images//loupe.svg" title="Search for meaning"
+                         style="width:30px;height:30px; padding-top: 0px">
+                </a>
+            </td>
+        </table>
+    </td>
+
+</table>
+
+<p id='article'>
 </p>
 
 
-
 <script>
+    scrollStack = []
+
+    function getSelectionText() {
+        var text = "";
+        var activeEl = document.activeElement;
+        var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
+        if (
+            (activeElTagName == "textarea") || (activeElTagName == "input" &&
+                /^(?:text|search|password|tel|url)$/i.test(activeEl.type)) &&
+            (typeof activeEl.selectionStart == "number")
+        ) {
+            text = activeEl.value.slice(activeEl.selectionStart, activeEl.selectionEnd);
+        } else if (window.getSelection) {
+            text = window.getSelection().toString();
+        }
+        return text;
+    }
+
+    function doback() {
+        console.log('stack', stack)
+        if (stack.length > 1) {
+            //if(stack.length > 1){
+
+            stack.pop()
+            last = stack[stack.length - 1];
+            doPush = false
+
+            if (last[0] !== '$') {
+                hndwrd(last)
+            } else {
+                loadSearch(last.substr(1))
+            }
+
+
+            toset = scrollStack[scrollStack.length - 1]
+            setScroll(toset)
+            console.log("last = ", toset)
+            scrollStack.pop()
+
+            //setScroll(scrollStack[scrollStack.length - 1])
+
+            doPush = true
+
+            //document.body.scrollTop = psss
+            //}
+        }
+    }
+
+    document.onkeydown = checkKey;
+
+    function detect_lang() {
+        for (let i = 0; i < std_langs_full.length; i++) {
+            if (std_langs[i] === lang) {
+                main_lang = i
+            }
+        }
+        //console.log('detected', main_lang)
+    }
+
+    function getScroll(){
+        var useLegacyScroll = typeof window.scrollY === "undefined";
+        var lastY = useLegacyScroll ? window.pageYOffset : window.scrollY
+        return lastY;
+    }
+
+    function setScroll(_x){
+        //document.body.scrollTop = _x;
+        //console.log("Set scroll", _x)
+        window.scrollTo(0, _x);
+    }
+
+    function checkKey(e) {
+        e = e || window.event;
+
+        if(e.which == 13) {
+            dosearch()
+        }
+
+        if (e.keyCode == '38') {
+            // up arrow
+        } else if (e.keyCode == '83') {
+            if (!(document.activeElement == document.getElementById("text")) && !(document.activeElement == document.getElementById("searchfield"))) {
+                detect_lang()
+                speak(getSelectionText())
+            }
+        } else if (e.keyCode == '37') {
+            doback()
+        }
+    }
+
+    function dosnd() {
+        selection = getSelectionText()
+        if (selection === "") {
+            selection = currentLemma
+        }
+        detect_lang()
+        speak(selection)
+    }
+
     lang = ''
     nat = ''
+    stack = []
+    hash = {}
+    search_hash = {}
+    doPush = true
+    currentLemma = ""
 
-    function handleArticle(stuff){
+    function handleArticle(stuff) {
         ps = stuff.split('|||||')
-        res = ps[2]
-        return res;
+
+        hd = ps[0]
+        if(hd.indexOf("<br>") !== -1) {
+            hd = hd.substring(0, hd.indexOf("<br>"))
+        }
+        hd = hd.replaceAll("<h1>", "<b>")
+        hd = hd.replaceAll("</h1>", "</b>    ")
+
+        //console.log(hd)
+        let to_ret = {"header":hd, "core":ps[2]}
+        return to_ret;
     }
 
-    function hndwrd(str){
-        console.log("handling", str)
 
-        parts = str.split('=')
-        word = parts[0]
-        form = parts[1]
-        lemma = parts[2]
 
-        //url = 'http://174.138.15.163:8085/api/article?lang='+lang+'&word='+lemma
-        url = 'http://174.138.15.163:8085/api/article?lang='+lang+'&word='+lemma+'&nat='+nat
-        article_content = httpGet(url)
-        article_content = handleArticle(article_content)
+    function loadSearch(word) {
+        if(mp === true && ccnt > 0){
+            var nnn = window.open("http://link-ify.com/mini_linkify.html?lang="+lang+"&search="+word+"&native="+nat+"&theme="+theme+"&mp="+mp, "Popup"+Math.random(), "width=700,height=500");
+            //var nnn = open("http://localhost:63343/mini_linkify.html?lang="+lang+"&word="+content+"&native="+nat, "Popup"+cnt, "width=700,height=500");
+            return
+        }
+        else{
+            if(mp === true){
+                ccnt++;
+            }
+        }
+
+
+        //console.log("LOAD SEARCH", word)
+        if(lang !== 'en') {
+            url = "http://174.138.15.163:8085/api/search?lang=" + lang + "&word=" + word + "&native=" + 'en' + "&type=word"
+        }
+        else{
+            url = "http://174.138.15.163:8085/api/search?lang=" + lang + "&word=" + word + "&source=" + nat + "&type=word"
+        }
+
+        //url = "http://174.138.15.163:8085/api/search?lang=" + lang + "&word=" + word + "&type=" + "word" + "&source=" + nat
+        //url = "http://174.138.15.163:8085/api/reverso?lang=" + lang + "&word=" + word + "&nat=" + nat + "&type=" + "word"
+
+        let sr = ""
+        if(search_hash[url] === undefined){
+            sr = httpGet(url)
+            search_hash[url] = sr
+        }
+        sr = search_hash[url]
+
+        article_content = sr
+
+        if (doPush) {
+            console.log("PUSH", getScroll())
+            stack.push("$" + word)
+            scrollStack.push(getScroll())
+        }
+
         document.getElementById("article").innerHTML = article_content
+        document.getElementById("header").innerHTML = "Search on <b>"+word+"</b>"
+
+        if(doPush){
+            setScroll(0)
+        }
     }
 
-    function httpGet(theUrl)
-    {
+    let ccnt = 0;
+    function hndwrd(str) {
+
+        if(mp === true && ccnt > 0){
+            parts = str.split('=')
+            word = parts[0]
+            form = parts[1]
+            lemma = parts[2]
+            currentLemma = lemma
+
+            var nnn = window.open("http://link-ify.com/mini_linkify.html?lang="+lang+"&word="+currentLemma+"&native="+nat+"&theme="+theme+"&mp="+mp, "Popup"+Math.random(), "width=700,height=500");
+            //var nnn = open("http://localhost:63343/mini_linkify.html?lang="+lang+"&word="+content+"&native="+nat, "Popup"+cnt, "width=700,height=500");
+
+
+            return
+        }
+        else{
+            if(mp === true){
+                ccnt++;
+            }
+        }
+
+        if (doPush) {
+            console.log("PUSH", getScroll())
+            stack.push(str)
+            scrollStack.push(getScroll())
+        }
+
+        document.getElementById("header").innerHTML = ""
+        document.getElementById("article").innerHTML = ""
+
+        //console.log("handling", str, str.indexOf("|"))
+        if (str.indexOf("|") == -1) {
+            parts = str.split('=')
+            word = parts[0]
+            form = parts[1]
+            lemma = parts[2]
+            currentLemma = lemma
+
+            //url = 'http://174.138.15.163:8085/api/article?lang='+lang+'&word='+lemma
+            if (hash[lemma] === undefined) {
+                url = 'http://174.138.15.163:8085/api/article?lang=' + lang + '&word=' + lemma.replaceAll(" ", "989") + '&nat=' + nat
+                article_content = httpGet(url)
+                article_content = handleArticle(article_content)
+                hash[lemma] = article_content
+            } else {
+                article_content = hash[lemma]
+            }
+
+            if(form !== "canonical") {
+                if(form === "a"){
+                    form = "a form"
+                }
+                document.getElementById("header").innerHTML = word + " is " + form + " of<br>" + article_content["header"]
+            }
+            else{
+                document.getElementById("header").innerHTML = article_content["header"]
+
+            }
+
+            document.getElementById("article").innerHTML = article_content["core"]
+        } else {
+            disamba_content = "<h1>Disambiguation</h1> <br> <ol>"
+            eqs = str.split("|")
+            for (let j = 0; j < eqs.length; j++) {
+                spl = eqs[j].split("=")
+                disamba_content += "<li>" + spl[0] + " is " + spl[1] + " form of <a href=\"#\" onclick=\"hndwrd('" + spl[2] + "=canonical=" + spl[2] + "')\">" + spl[2] + "</a></li>"
+            }
+            disamba_content += "<ul>"
+            document.getElementById("article").innerHTML = disamba_content
+        }
+
+        console.log("hnd", doPush)
+
+        if(doPush) {
+            //console.log("Set scroll 0")
+            setScroll(0)
+        }
+    }
+
+    function httpGet(theUrl) {
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", theUrl, false );
-        xmlHttp.send( null );
+        //console.log('URL', theUrl)
+        xmlHttp.open("GET", theUrl, false);
+        xmlHttp.send(null);
         return xmlHttp.responseText;
     }
 
     const __queryString = window.location.search;
     __urlParams = new URLSearchParams(__queryString);
 
-    console.log(__urlParams)
     let word = __urlParams.get('word')
+    let search = __urlParams.get('search')
+    let theme = __urlParams.get('theme')
+
     lang = __urlParams.get('lang')
     nat = __urlParams.get('native')
+    mp = false
+    mp = __urlParams.get('mp')
 
-    if(lang === undefined || lang === null){
+    if (mp === "true") {
+        mp = true
+    }
+
+    if (lang === undefined || lang === null) {
         lang = 'ru'
     }
 
-    if(nat === undefined || nat === null){
+    if (nat === undefined || nat === null) {
         nat = 'en'
     }
 
-    hndwrd(word+"=canonical="+word)
+    if (word !== null) {
+        hndwrd(word + "=canonical=" + word)
+    }
+
+
+    if (theme === null) {
+        theme = "dark"
+    }
+
+
+    console.log("I set mp", mp)
+
+    if (search !== null) {
+        loadSearch(search)
+    }
+
+    if (theme === 'blue') {
+        //console.log("Setting blue style")
+        $('head').append('<link rel="stylesheet" type="text/css" href="blue_style.css">');
+    }
+    if (theme === 'light') {
+        //console.log("Setting light style")
+        $('head').append('<link rel="stylesheet" type="text/css" href="light_style.css">');
+    }
+
+    if (theme === 'dark') {
+        //console.log("Setting dark style")
+        $('head').append('<link rel="stylesheet" type="text/css" href="dark_style.css">');
+    }
+
+    function dosearch(){
+        loadSearch(document.getElementById("searchfield").value)
+        document.getElementById("searchfield").value = ""
+    }
+
+    main_lang = 0
+    apply_autocomplete()
+    inittts()
+
 </script>
 </body>
 </html>

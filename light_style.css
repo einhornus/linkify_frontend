@@ -1,0 +1,47 @@
+body {
+    background-color: var(--primary-color);
+}
+
+p, textarea, input {
+    font-size: 15px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+
+table.reverso_table td {
+    width: 50%;
+    overflow: hidden;
+    vertical-align: top;
+    border: 1px dotted var(--secondary-color);
+}
+
+
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: black;
+}
+
+
+a:link {color: darkcyan; text-decoration: none;}
+a:visited {color: darkcyan; text-decoration: none;}
+a:hover {color: darkcyan; text-decoration:underline}
+
+a.normal:link {color: blue; text-decoration: none;}
+a.normal:visited {color: blue; text-decoration: none;}
+a.normal:hover {color: blue; text-decoration:underline}
+
+table {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table.center td {
+    width: 50%;
+    overflow: hidden;
+    vertical-align: top;
+    border: 1px dotted var(--secondary-color);
+}
